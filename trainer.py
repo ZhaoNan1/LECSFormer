@@ -62,8 +62,8 @@ def trainer(args, model, config):
 
             output, mid_features = model(images)
 
-            output_loss_ce = ce_loss(output,labels) * 10
-            midfeatures_loss_ce = sum([ce_loss(mid_features[i],labels) for i in range(len(mid_features))]) * 2
+            output_loss_ce = ce_loss(output,labels) * 5
+            midfeatures_loss_ce = sum([ce_loss(mid_features[i],labels) for i in range(len(mid_features))]) 
             loss = output_loss_ce + midfeatures_loss_ce
 
             optimizer.zero_grad()
