@@ -50,9 +50,9 @@ _C.MODEL.RESUME = ''
 # Number of classes, overwritten in data preparation
 _C.MODEL.NUM_CLASSES = 1
 # Dropout rate
-_C.MODEL.DROP_RATE = 0.1
+_C.MODEL.DROP_RATE = 0.2
 # Drop path rate
-_C.MODEL.DROP_PATH_RATE = 0.1
+_C.MODEL.DROP_PATH_RATE = 0.2
 # Label Smoothing
 _C.MODEL.LABEL_SMOOTHING = 0.1
 
